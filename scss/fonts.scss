@@ -1,0 +1,66 @@
+
+// TT Hoves font-family
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Light'), local('TT-Hoves-Light'),
+        url('TTHoves-Light.woff2') format('woff2'),
+        url('TTHoves-Light.woff') format('woff'),
+        url('TTHoves-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Regular'), local('TT-Hoves-Regular'),
+        url('TTHoves-Regular.woff2') format('woff2'),
+        url('TTHoves-Regular.woff') format('woff'),
+        url('TTHoves-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Medium'), local('TT-Hoves-Medium'),
+        url('TTHoves-Medium.woff2') format('woff2'),
+        url('TTHoves-Medium.woff') format('woff'),
+        url('TTHoves-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Bold'), local('TT-Hoves-Bold'),
+        url('TTHoves-Bold.woff2') format('woff2'),
+        url('TTHoves-Bold.woff') format('woff'),
+        url('TTHoves-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v20-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+//San Francisco Pro font-family
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
+      url('SFProDisplay-Regular.woff2') format('woff2'),
+      url('SFProDisplay-Regular.woff') format('woff'),
+      url('SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

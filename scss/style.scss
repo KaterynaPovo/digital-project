@@ -8,10 +8,14 @@ $color-light-gray: #F9F9F9;
 $color-verylight-gray: #F2F2F2;
 $color-midle-gray: #C8C8C8;
 $color-almost-white: #F3F3F3;
+$color-snow-white: #FBFBFB;
 $color-black: #000000;
 $color-white: #FFFFFF;
 $color-yellow: #ffee10;
 $color-blue: rgb(35, 35, 145);
+$color-light-blue: rgb(147, 174, 209);
+$placeholder-color: #8D8D8D;
+$footer-color: #2C2C2C;
 
 
 //mixins
@@ -129,7 +133,7 @@ h1 {
                 cursor: pointer;
                 &:hover {
                     border-color: $color-blue;
-                    background-color: rgb(147, 174, 209);
+                    background-color: $color-light-blue;
                 }
             }
             
@@ -246,30 +250,13 @@ h1 {
                 color: $color-white;
                 @include button-hover;
                 .arrow-left {
-                    // position: relative;
                     &:before {
-                    //   content: "";
-                    //   display: block;
-                    // //   margin-right: 10px;
-                    //   width: 8px;
-                    //   height: 8px;
                       border-top: 1px solid $color-white;
                       border-right: 1px solid $color-white;
-                    //   transform: rotate(45deg);
-                    //   position: absolute;
-                    //   right: -10px;
-                    //   top: -11px;
                     }
                     
                     &:after {
-                    //   content: "";
-                    //   display: block;
-                    //   position: absolute;
-                    //   width: 17px;
-                    //   height: 1px;
                       background-color: $color-white;
-                    //   right: -9%;
-                    //   top: -8px;
                     }
                 } 
             }
@@ -308,14 +295,13 @@ h1 {
 //About company-container
 
 .company-container {
-    background-color: #FBFBFB;
+    background-color: $color-snow-white;
     display: flex;
     margin-top: 60px;
     padding: 30px 100px 30px 70px;
     flex-wrap: wrap;
     .row {
         display: flex;
-        // flex-wrap: wrap;
         flex: 1;
         .column {
                 padding-top: 30px;
@@ -449,7 +435,6 @@ h1 {
             background-color: $color-light-gray;
             color: $color-black;
             border: 1px solid $color-black;
-            @include button-hover;
             .arrow-left {
                 &:before {
                   border-top: 1px solid $color-dark-gray;
@@ -497,9 +482,7 @@ h1 {
             padding-bottom: 30px
         }
         img {
-            height: 255px;
-            // padding-bottom: 30px;
-            // padding-right: 20px;
+            height: 255px; 
             &:last-child {
                 padding-right: 0;
             }
@@ -509,7 +492,6 @@ h1 {
 
 .project-content{
 	position: relative;
-	// width: 90%;
 	max-width: 700px;
 	margin: auto;
 	overflow: hidden;
@@ -567,7 +549,8 @@ h1 {
        letter-spacing: 0.2em;
        &:hover {
            border: none;
-           color: $color-midle-gray;
+           color: $color-white;
+           font-weight: bolder;
            .arrow-left {
                 &:before {
                 border-top: 1px solid $color-light-gray;
@@ -589,8 +572,7 @@ h1 {
 .fadeIn-bottom {
 	top: 80%;
 }
-
-    
+  
 }
 
 // Contact part 
@@ -632,25 +614,25 @@ h1 {
                 &::placeholder { /* Chrome/Opera/Safari */
                     @include text(14px, 17px);
                     letter-spacing: 0.04em;
-                    color: #8D8D8D;
+                    color: $placeholder-color;
                     font-family: 'TT Hoves', sans-serif;
                 }
                 &::-moz-placeholder { /* Firefox 19+ */
                     @include text(14px, 17px);
                     letter-spacing: 0.04em;
-                    color: #8D8D8D;
+                    color: $placeholder-color;
                     font-family: 'TT Hoves', sans-serif;
                   }
                 &:-ms-input-placeholder { /* IE 10+ */
                     @include text(14px, 17px);
                     letter-spacing: 0.04em;
-                    color: #8D8D8D;
+                    color: $placeholder-color;
                     font-family: 'TT Hoves', sans-serif;
                   }
                 &:-moz-placeholder { /* Firefox 18- */
                     @include text(14px, 17px);
                     letter-spacing: 0.04em;
-                    color: #8D8D8D;
+                    color: $placeholder-color;
                     font-family: 'TT Hoves', sans-serif;
                   }
             }
@@ -727,7 +709,7 @@ h1 {
 //Footer part
 
 footer {
-    background-color: #2C2C2C;
+    background-color: $footer-color;
     text-transform: none;
     .footer-container {
         padding: 58px 0 60px 0;
@@ -952,7 +934,6 @@ footer {
             } 
         }
     }
-}
 
 // Contact part
 
@@ -962,6 +943,7 @@ footer {
 
 #footer {
     margin: 0;
+    padding: 0;
     .footer-container {
         flex-direction: column;
         flex-wrap: wrap;
@@ -972,5 +954,4 @@ footer {
         text-decoration: underline;
         }
 }
-
-
+}
